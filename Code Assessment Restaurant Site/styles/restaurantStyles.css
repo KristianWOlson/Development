@@ -1,0 +1,98 @@
+/*
+Creator: Your Name
+Date created: Today's date
+Date last modified: 
+*/
+body {
+    background-color: beige;
+    font-family: arial, helvetica, sans-serif;
+    color: #0d1f2d;
+    max-width: 900px;
+    margin: 0 auto;
+}
+#jumbotron {
+    background-color: #0d1f2d; 
+    color: #fef9ff;
+}
+header, footer {
+    background-color: #5b7d87;
+    color: #fef9ff;
+    height: 100px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 30px 10px 20px 10px;
+}
+h3{
+    color: rgb(0,49,83);
+    text-align: top;
+}
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    text-align: left;
+    }
+nav {
+    border-top: 3px dashed #546a7b;
+    border-bottom: 3px dashed #546a7b;
+    margin-top: 4px;
+}
+nav a {
+    background-color: #5b7d87;
+    color: #fef9ff;
+    padding: 8px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width: auto;
+    float: auto;
+}
+nav a:visited {
+    color: #e4c3ad; 
+}
+nav a:hover {
+    background-color: #fef9ff;
+    color: #5b7d87; 
+    font-weight: bold;
+}
+nav a:active {
+    font-weight: bold;
+}
+.clear-float {
+    clear:both;
+}
+#arrows{
+    color: #0d1f2d;
+    border: #0d1f2d;
+}
+#title{
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    text-align: left;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #0d1f2d;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #0d1f2d;
+}
+label{
+    text-align: right;
+}

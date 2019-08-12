@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+
+<!--
+    Name: Kristian Olson
+    Date Created: 8.7.2019
+    Most Recent Version:
+-->
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <div class="jumbotron jumbotron-fluid" id="jumbotron">
+                <div class="container">
+                  <h1>We're opening a new location!</h1> 
+                  <p>Come join us on August 22nd at our new location in the downtown district to celebrate our first expansion. We will be launching a new fish chowder and have a by one get two drink special!</p> 
+                </div>
+        </div>
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <title>Menu</title> 
+    </head>
+    
+    <body>
+        <header>
+            <h1>The Rusty Dab Tavern</h1>
+
+            <style>
+                table, th, td {
+                    border: 1px solid rgb(61,61,62);
+                    border-collapse: collapse;
+                    padding: 5px 10px;
+                }
+                table{
+                    width: 90%;
+                    margin: auto;
+                }
+                tr{
+                    height: 30px;
+                }
+                th{
+                    background-color:rgb(0,49,83);
+                    color: #fef9ff;
+                    text-align: center;
+                }
+                tbody tr:nth-child(even) {
+                    background-color: #fef9ff;
+                }
+                tbody tr:nth-child(odd) {
+                    background-color: lightgray;
+                }
+                #food {
+                    text-align: center;
+                    vertical-align: text-top;
+                    font-size: .8em;
+                    background-color: beige;
+                }
+                #beverages {
+                    text-align: left;
+                    font-size: .8em;
+                }
+
+            </style>
+        </header>
+
+        <nav>
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                <a class="nav-link" href="home-page.html"><i class="material-icons" style="font-size:18px;">home</i></a></li>
+                <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a></li>
+                <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <br />
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fish and Chips</th>
+                        <th>Clam Chowder</th>
+                        <th>Whitefish on Toast</th>
+                    </tr>
+                </thead>
+                <tbody id="food">
+                    <tr>
+                        <td>Three crispy malty beer battered filets of haddock served witha side of spicy house tartar sauce. Comes with a side salad or french fries. <p>$14.99</p></td>
+                        <td>A generous portion of our famous clam chowder made with fresh clams, potatoes, onion, butter, and the finest herbs, and delicious fattening heavy cream. Served with a side salad and oyster crackers.<p>$5.99</p></td>
+                        <td>A midwestern riff on the Scandanavian staple. Two heaping open faced sandwitches made of dark rye toast, dill and capers cream sauce, quick pickles, pan fried whitefish, pickled onions, and salmon roe. A house speciality!<p>$10.99</p></td>
+                    </tr>
+                </tbody>
+                    <thead>
+                    <tr>
+                        <th>Neptunes Bounty</th>
+                        <th>Kraken crisps</th>
+                        <th>Trireme-misu</th>
+                    </tr>
+                </thead>
+                <tbody id="food">
+                    <tr>
+                        <td>A feast fit for a god! 6 East Coast oysters Rockefeller, one Main lobster tail, one pound of deep fried clam strips, one pound of seasoned and boiled crayfish, served in a butter coated bucket with our signature spicy creole aioli.<p>$35.99</p></td>
+                        <td>A mix of perfectly seasoned clam strips and calamari with creole aioli and buttery herb sauce.<p>$7.99</p></td>
+                        <td>A homemade tiramisu cake formed in the shape of a Greek Trireme from the 5th centiry BCE. A delicious and historic way to finish your evening.<p>$4.99</p></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="clear-float"></div>
+        </section>
+        <p> </p>
+
+        <section>
+            <table>
+                <thead>
+                    <th style="text-align: left;">Beverages</th>
+                    <th></th>
+                </thead>
+                <tbody id="beverages">
+                <tr>
+                    <td>Root Beer</td>
+                    <td>$3.00</td>
+                </tr>
+                <tr>
+                    <td>Bottled Water</td>
+                    <td>$1.25</td>
+                </tr>
+                <tr>
+                    <td>Lemonade</td>
+                    <td>$1.00</td>
+                </tr>
+                <tr>
+                    <td>Iced Tea</td>
+                    <td>$1.25</td>
+                </tr>
+                </tbody>
+            </table>
+            <br />
+            </section>
+
+        <footer>
+            <p>3600 Soup Street, Flavortown, USA, 55555</p>
+            <p>(123) 456-7891</p>
+        </footer>
+    </body> 
+</html

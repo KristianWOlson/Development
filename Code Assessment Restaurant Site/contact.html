@@ -1,0 +1,201 @@
+<!DOCTYPE html> 
+
+<!--
+    Name: Kristian Olson
+    Date Created: 8.7.2019
+    Most Recent Version: 8.11.2019
+-->
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <div class="jumbotron jumbotron-fluid" id="jumbotron">
+                <div class="container">
+                    <h1>We're opening a new location!</h1> 
+                    <p>Come join us on August 22nd at our new location in the downtown district to celebrate our first expansion. We will be launching a new fish chowder and have a by one get two drink special!</p> 
+                </div>
+        </div>
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+        <title>Contact Us</title> 
+    </head>
+
+    <body>
+<!--HEADER-->
+        <header>
+            <h1>The Rusty Dab Tavern</h1>
+
+            <style>
+                .col-form-label{
+                    font-weight: bold;
+                    float: left;
+                    font-size: 14px;
+                }
+                label{
+                    text-align: right;
+                }
+                .invalid-feedback{
+                    text-align: left;
+                }
+                .col-md-6{
+                    float: left;
+                }
+                #form {
+                    text-align: center;
+                }
+                noscript{
+                    color: red;
+                    text-align: center;
+                }
+            </style>
+        </header>
+
+<!--NAVIGATION-->
+
+        <nav>
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                <a class="nav-link" href="home-page.html"><i class="material-icons" style="font-size:18px;">home</i></a></li>
+                <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a></li>
+                <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+<!--CONTACT FORM BODY-->
+
+        <section>
+
+            <article id="Description" >
+                <form name="myForm" class="form-horizontal needs-validation" novalidate onsubmit="return validateForm()" method="POST">
+                    <br />
+
+                    <!--ALERT WHEN JAVASCRIPT IS DISABLED-->
+
+                    <noscript>
+                        <p>Please enable JavaScript or this form will not work.</p>
+                    </noscript>
+
+                    <br />
+
+                    <!--NAME-->
+                    <div class="form-group row needs" id="form">
+                        <label class="control-label col-md-4" id="required" for="Name">Name:</label> 
+                        <div class="col-md-4">
+                            <input class="form-control" type="text" id="Name" name="Name" required>
+                            <div class="invalid-feedback">
+                                    Please enter a name.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--EMAIL-->
+                    <div class="form-group row" id="form">
+                        <label class="control-label col-md-4" id="required" for="email">Email:</label>
+                        <div class="col-md-4">
+                            <input class="form-control" type="text" id="email" name="email" required>
+                            <div class="invalid-feedback">
+                                    Please enter an email address.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--PHONE-->
+                    <div class="form-group row">
+                        <label class="control-label col-md-4" id="required" for="phone">Phone:</label>
+                        <div class="col-md-4">
+                            <input class="form-control"  type="text" id="phone" name="phone" required>
+                            <div class="invalid-feedback">
+                                    Please enter a phone number.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--REASON FOR INQUIRY-->
+                    <div class="form-group row">
+                        <label class="control-label col-md-4" for="contact">Reason for Inquiry:</label>
+                        <div class="col-md-4">
+                            <select  class="form-control" id="contact" name="contact" optional> 
+                                <option value="Catering" selected>Catering</option>
+                                <option value="Private Party">Private Party</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!--ADDITIONAL INFORMATION-->
+                    <div class="form-group row">
+                        <label class="control-label col-md-4" for="info">Additional Information:</label>
+                        <div class="col-md-4">
+                            <textarea  class="form-control" id="info" name="info" optional></textarea>
+                        </div>
+                    </div>
+                    
+                    <!--HAVE YOU BEEN?-->
+                        <fieldset class="form-group">
+                            <legend class="col-form-label col-md-4">Have you been to the restaurant?</legend>
+                            <input type="radio" id="choice1" name="questionnaire" value="no" optional>
+                            <label class="col-md-2" for="choice1" style="text-align: left;">No</label>
+                            <input type="radio" id="choice2" name="questionnaire" value="yes" optional>
+                            <label class="col-md-2" for="choice2" style="text-align: left;">Yes</label>
+                        </fieldset>
+               
+                <!--BEST DAY TO CONTACT-->
+                    <fieldset class="form-group">
+                        <legend class="col-form-label col-md-4">Best days to contact you:</legend>
+                        <input type="checkbox" id="m" name="interest" value="m" optional> 
+                        <label for="m">M</label>
+                        <input type="checkbox" id="t" name="interest" value="t" optional>
+                        <label for="t">T</label>
+                        <input type="checkbox" id="w" name="interest" value="w" optional>
+                        <label for="w">W</label>
+                        <input type="checkbox" id="th" name="interest" value="th" optional>
+                        <label for="th">Th</label>
+                        <input type="checkbox" id="f" name="interest" value="f" optional>
+                        <label for="f">F</label>
+                    </fieldset>
+                <!--SUBMIT-->
+                <div class="form-group" style="text-align: center;">
+                    <input type="submit" name="submit" value="Submit Request"> 
+                </div>
+            </form>
+
+            <script>
+                    (function() {
+                      'use strict';
+                      window.addEventListener('load', function() {
+                        var forms = document.getElementsByClassName('needs-validation');
+                        var validation = Array.prototype.filter.call(forms, function(form) {
+                          form.addEventListener('submit', function(event) {
+                            if (form.checkValidity() === false) {
+                              event.preventDefault();
+                              event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                          }, false);
+                        });
+                      }, false);
+                    })();
+                    </script>
+
+            </article>
+        </section>
+
+<!--FOOTER-->
+
+        <footer>
+            <p>3600 Soup Street, Flavortown, USA, 55555</p>
+            <p>(123) 456-7891</p>
+        </footer>
+    </body> 
+
+
+</html
+      
