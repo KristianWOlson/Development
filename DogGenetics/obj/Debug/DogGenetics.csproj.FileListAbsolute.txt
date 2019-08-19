@@ -1,0 +1,7 @@
+C:\Users\krist\source\repos\DogGenetics\bin\Debug\DogGenetics.exe.config
+C:\Users\krist\source\repos\DogGenetics\bin\Debug\DogGenetics.exe
+C:\Users\krist\source\repos\DogGenetics\bin\Debug\DogGenetics.pdb
+C:\Users\krist\source\repos\DogGenetics\obj\Debug\DogGenetics.csprojAssemblyReference.cache
+C:\Users\krist\source\repos\DogGenetics\obj\Debug\DogGenetics.csproj.CoreCompileInputs.cache
+C:\Users\krist\source\repos\DogGenetics\obj\Debug\DogGenetics.exe
+C:\Users\krist\source\repos\DogGenetics\obj\Debug\DogGenetics.pdb
